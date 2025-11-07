@@ -1,0 +1,38 @@
+" Map jk to Escape in insert mode
+inoremap jk <Esc>
+
+" Set Space as the leader key
+let mapleader = " "
+
+" Open Fuzzier with <leader>ff
+nnoremap <leader>ff :action com.mituuz.fuzzier.Fuzzier<CR>
+
+" Quit with <leader>q
+nnoremap <leader>q :q<CR>
+
+" Save file with <leader>w
+nnoremap <leader>w :w<CR>
+
+" Make p and P paste from system clipboard
+nnoremap p "+p
+nnoremap P "+P
+vnoremap p "+p
+vnoremap P "+P
+
+" Map <leader>t to open Terminal tool window
+nmap <leader>t :action ActivateTerminalToolWindow<CR>
+
+" Yank to system clipboard in normal mode
+nnoremap y "+y
+nnoremap yy "+yy
+nnoremap Y "+Y
+
+" Yank to system clipboard in visual mode
+vnoremap y "+y
+vnoremap Y "+Y
+
+
+" Delete to system clipboard
+nnoremap d "+d
+vnoremap d "+d
+
